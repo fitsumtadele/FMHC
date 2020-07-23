@@ -8,7 +8,10 @@ import { AboutUsComponent } from './public/about-us/about-us.component';
 import { ForgotComponent } from './public/forgot/forgot.component';
 
 
+
+
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'registration', component: RegistrationComponent },
