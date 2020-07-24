@@ -10,12 +10,12 @@ import { AppConst } from './helper/constants';
   providedIn: 'root'
 })
 export class AccountFactory {
-   /* constructor(public commonservice: CommonService, public storageservice: StorageService) { }
-users = $resource(this.commonservice.buildUrl((AppConst.API_URL.Account.Users), { id: "@id" }), AppConst.ResourceMethods.All);
-authenticate = $resource(this.commonservice.buildUrl((AppConst.API_URL.Account.Autenticate), {}), AppConst.ResourceMethods.Post);
-token = resource(this.commonservice.buildUrl((AppConst.API_URL.Account.ValidateToken), {}), AppConst.ResourceMethods.Post);
-validateToken = resource(this.commonservice.buildUrl((AppConst.API_URL.Account.ValidateToken), {}), AppConst.ResourceMethods.Readonly);
-changePassword = resource(this.commonservice.buildUrl((AppConst.API_URL.Account.ChangePassword), {}), AppConst.ResourceMethods.Save);
-resetPassword = resource(this.commonservice.buildUrl((AppConst.API_URL.Account.ResetPassword), { username: "@username" }), AppConst.ResourceMethods.Save);
-logout = resource(this.commonservice.buildUrl((AppConst.API_URL.Account.Logout), { userID: "@userID" }), AppConst.ResourceMethods.Save);
-*/}
+  constructor(public commonservice: CommonService, public storageservice: StorageService) { }
+  // users = (this.commonservice.buildUrl((AppConst.API_URL.Account.Users), { id: "@id" }), AppConst.Methods.All);
+  // authenticate = (this.commonservice.buildUrl((AppConst.API_URL.Account.Autenticate), {}), AppConst.Methods.Post);
+  // token = (this.commonservice.buildUrl((AppConst.API_URL.Account.ValidateToken), {}), AppConst.Methods.Post);
+  // validateToken = (this.commonservice.buildUrl((AppConst.API_URL.Account.ValidateToken), {}), AppConst.Methods.Readonly);
+  // changePassword = (this.commonservice.buildUrl((AppConst.API_URL.Account.ChangePassword), {}), AppConst.Methods.Save);
+  // resetPassword = (this.commonservice.buildUrl((AppConst.API_URL.Account.ResetPassword), { username: "@username" }), AppConst.Methods.Save);
+  // logout = (this.commonservice.buildUrl((AppConst.API_URL.Account.Logout), { userID: "@userID" }), AppConst.Methods.Save);
+}

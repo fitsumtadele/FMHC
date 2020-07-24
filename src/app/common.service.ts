@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import * as _ from 'underscore';
 import { AppConst } from './helper/constants';
 import { StorageService } from './storage.service';
+import { Config } from './config';
 //import * as angular from "angular";
 
 
@@ -18,16 +19,16 @@ export class CommonService {
 };
 
 buildUrlObj(resourceUrl, obj) {
-    //var rootApiUrl = EnvironmentConfig.RootAPIURL;
+    const rootApiUrl = Config.env.development.jsiLocal.EnvironmentConfig.RootAPIURL;
 
-    var properties = _.keys(obj);
-    _.each(properties, function(prop) {
+    const properties = _.keys(obj);
+    _.each(properties, (prop) => {
         if (!_.isUndefined(obj[prop])) {
             resourceUrl = resourceUrl.replace(':' + prop, obj[prop]);
         }
     });
 
-  // return rootApiUrl + resourceUrl;
+    return rootApiUrl + resourceUrl;
 };
 
 newGuid() {
